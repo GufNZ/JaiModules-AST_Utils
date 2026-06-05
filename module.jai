@@ -5,6 +5,8 @@
 PP :: #import "Program_Print";
 #import "String";
 
+//TODO: add utilities for copying/creating AST node trees & nodes.
+
 NodeKindToNodeType : []Type = .[
 	//	UNINITIALIZED				:: 0;
 	void,
