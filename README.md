@@ -32,3 +32,6 @@ The utility builds the mapping from node types to `NodeKind` as needed.
 #### `transformAST :: (node: *$T/Code_Node, predicate: (node: *$FilteredNodeType) -> bool, transform: (node: *FilteredNodeType) -> *$TransformedNodeType, log := false) -> *T`
 Walks the AST rooted at `node`, applying `transform` to each matching `FilteredNodeType` where `predicate` is true.
 Non-matching nodes are left unchanged; the possibly-modified root is returned.
+
+//FIXME: example requires Basic/Print.jai patch.
+//TODO: make filtering already modified the (alterable) default of filterAST...
